@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+     <script language="JavaScript" src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script language="JavaScript" src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .modal-backdrop {
+            z-index: 0 !important;
+        }
+        /*
+        Fix to show in full screen demo
+        */
+        iframe {
+            height: 700px !important;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px !important;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            color: #fff !important;
+            background: #428bca !important;
+            border-color: #357ebd !important;
+            box-shadow: none !important;
+        }
+
+        .btn-danger {
+            color: #fff !important;
+            background: #d9534f !important;
+            border-color: #d9534f !important;
+            box-shadow: none !important;
+        }
+        .btnLink {
+    background:none!important;
+     border:none; 
+     padding:0!important;
+    
+    /*optional*/
+    font-family:arial,sans-serif; /*input has OS specific font-family*/
+     color:#006097;
+     text-decoration:none;
+     cursor:pointer;
+}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           
+            $('#datatable').dataTable( {    
+} );
+            $("[data-toggle=tooltip]").tooltip();
+
+            
+
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="display: block !important;">
+            <nav class="navbar">
+                <div class="container-fluid">
+                        <span style="padding-left:400px;color:white;font-size:large">Posted Jobs</span>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-4">
+                <p align="center" style="margin-left:150px;">
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#AddNewJobModal"> Add New Job</button>
+                </p>        
+                </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+
+                <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Job Tittle</th>
+                            <th>Job Description</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Job Tittle</th>
+                            <th>Job Description</th>
+
+                            <th>Edit</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                           <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                           <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                           <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btnLink"data-toggle="modal" data-target="#exampleModalCenter"> your button that looks like a link</button></td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="fas fa-edit"></span></button></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="margin-left:150px; border-bottom:0px;">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color:#006097">Edit Job Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+    <tr>
+    <th>Job ID</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th>Job Tittle</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Description</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Job Required Experience</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Salary</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Salary Comment</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Benefits</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Message From Consultant</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Business</th>
+    <td>555 77 855</td>
+  </tr>
+  </table>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn btn-dark btn-lg" style="width: 100%;">Update</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="margin-left:150px; border-bottom:0px;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:#006097"> Job Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <table class="table table-bordered">
+    <tr>
+    <th>Job ID</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th>Job Tittle</th>
+    <td>555 77 854</td>
+  </tr>
+  <tr>
+    <th>Job Description</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Job Required Experience</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Job Salary</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Job Salary Comment</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Job Benefits</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Message From Consultant</th>
+    <td>555 77 855</td>
+  </tr>
+  <tr>
+    <th>Business</th>
+    <td>555 77 855</td>
+  </tr>
+  </table>
+      </div>
+      <div class="modal-footer" style="display:block !important;padding-left:220px">
+        <button type="button" class="btn btn-secondary" class="btn btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- The Modal -->
+  <div class="modal fade" id="AddNewJobModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+     <div class="modal-header" style="margin-left:150px; border-bottom:0px;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:#006097">Add New Job</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <table class="table table-bordered">
+    <tr>
+    <th>Job ID</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Tittle</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Description</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Required Experience</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Salary</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Job Salary Comment</th>
+    <td><textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea></td>
+  </tr>
+  <tr>
+    <th>Job Benefits</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Message From Consultant</th>
+    <td><input type="text" name="nato_pf" style="width: 99%;" /></td>
+  </tr>
+  <tr>
+    <th>Business</th>
+    <td>
+			<input type="text" name="business" id="txtBusiness" class="form-control input-sm" placeholder="Business">
+    </td>
+  </tr>
+  </table>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+                    <button type="button" class="btn btn btn-dark btn-lg" style="width: 100%;">Update</button>
+                </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+
+</html>
