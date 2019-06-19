@@ -10,6 +10,7 @@ hr.style1 {
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    font-size: 0.9rem !important;
 }
 
 p {
@@ -95,7 +96,7 @@ span {
 #sidebar.active ul li a {
     padding: 20px 10px;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 14px;
 }
 
 #sidebar.active ul li a i {
@@ -106,7 +107,7 @@ span {
 }
 
 #sidebar.active ul ul a {
-    padding: 10px !important;
+    padding: 5px !important;
 }
 
 #sidebar.active .dropdown-toggle::after {

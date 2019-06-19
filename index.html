@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>Shall&Bizz</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -28,7 +28,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><img class="card-img-top" src="./images/chicago.jpg" alt="Card image cap"></h3>
+                <h3><img class="card-img-top" src="./images/Shall&Bizz.jpg" alt="Card image cap"></h3>
                 <strong>S&B</strong>
             </div>
             
@@ -75,7 +75,7 @@
                 </li>
                 <hr class="style1"/>
                 <li>
-                    <a href="#">
+                    <a href="#" id="NewsandTopics" onclick="openAllNewsandTopics()">
                        <i class="far fa-newspaper"></i>
                         NEWS and TOPICS
                     </a>
@@ -94,7 +94,7 @@
                         CARIEERS
                     </a>
                 </li>
-                <hr class="style1">
+                <hr class="style1"/>
                 <li>
                     <a href="#" onclick="openPostedJobs()">
                        <i class="fas fa-user-cog"></i> Posted Jobs
@@ -132,7 +132,7 @@
 			<div id="pageBody" style="min-height:800px; padding-bottom:100px;"> 
 			
 			</div>
-            <footer class="footer mt-auto py-3" style="background-color: #f7f7f7">
+            <footer class="footer mt-auto py-3" style="background-color: #f2f2f2">
                 <div class="container">
                     <div class="row text-center text-xs-center text-sm-left text-md-left">
                     <div class="col-xs-12 col-sm-4 col-md-4">
@@ -177,14 +177,13 @@
                         <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
                     </ul>-->
                     </div>
-                    </hr>
+                    <hr/>
                     </div>	
                     <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">                    
                     </div>
-                    </hr>
-                    </div>	
-                </div>
+                    <hr/>
+                    </div>
             </footer>
         </div>
     </div>
@@ -227,7 +226,9 @@
        function openPostedJobs(){
             $('#pageBody').load("PostedJobs.html");
        }     
-        
+        function openAllNewsandTopics(){
+            $('#pageBody').load("AllNewsandTopics.html")
+        }
 
         $('#sidebarCollapse').click(function() {
         $("i", this).toggleClass("fa fa-arrow-left fa fa-arrow-right");
