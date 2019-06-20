@@ -29,7 +29,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3><img class="card-img-top" src="./images/Shall&Bizz.jpg" alt="Card image cap"></h3>
-                <strong>S&B</strong>
+                <strong><img class="card-img-top" src="./images/Shall&Bizz.jpg" alt="Card image cap"></strong>
             </div>
             
             <ul class="list-unstyled components" style="background-color:#006097 !Important">
@@ -102,7 +102,7 @@
                 </li>
                 <hr class="style1"/>                 
                  <li>
-                    <a href="#" onclick="openCareers()">
+                    <a href="#" onclick="openAppliedJobs()">
                         <i class="fas fa-user-cog"></i>Applied Jobs
                     </a>
                 </li>
@@ -225,7 +225,10 @@
        } 
        function openPostedJobs(){
             $('#pageBody').load("PostedJobs.html");
-       }     
+       }   
+       function openAppliedJobs(){
+            $('#pageBody').load("AppliedJobs.html");
+       }  
         function openAllNewsandTopics(){
             $('#pageBody').load("AllNewsandTopics.html")
         }
