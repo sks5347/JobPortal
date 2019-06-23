@@ -28,8 +28,8 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><img class="card-img-top" src="./images/Shall&Bizz.jpg" alt="Card image cap"></h3>
-                <strong><img class="card-img-top" src="./images/Shall&Bizz.jpg" alt="Card image cap"></strong>
+                <h3><img class="card-img-top" src="./images/Shallwe & Bizz.JPG" alt="Shallwe & Bizz"></h3>
+                <strong><img class="card-img-top" src="./images/Shallwe & Bizz.JPG" alt="Shallwe & Bizz"></strong>
             </div>
 
             <ul class="list-unstyled components" style="background-color:#006097 !Important">
@@ -54,15 +54,19 @@
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#"><i class="fas fa-chevron-right"></i>Recruitment</a>
+                            <a href="#" onclick="openRecruitment()"><i class="fas fa-chevron-right"></i>Recruitment</a>
                         </li>
                         <li>
 
-                            <a href="#"><i class="fas fa-chevron-right"></i></i>Labour</a>
+                            <a href="#" onclick="openLabor()"><i class="fas fa-chevron-right"></i></i>Labor</a>
                         </li>
                         <li>
 
-                            <a href="#"><i class="fas fa-chevron-right"></i>HR Consulting</a>
+                            <a href="#" onclick="openHRConsulting()"><i class="fas fa-chevron-right"></i>HR Consulting</a>
+                        </li>
+                        <li>
+
+                            <a href="#" onclick="openTraining()"><i class="fas fa-chevron-right"></i>Training</a>
                         </li>
                     </ul>
                 </li>
@@ -233,6 +237,18 @@
        }
         function openAllNewsandTopics(){
             $('#pageBody').load("AdminNewsandTopics.html")
+        }
+        function openRecruitment() {
+            $('#pageBody').load("Recruitment.html")
+        }
+        function openLabor() {
+            $('#pageBody').load("Labor.html")
+        }
+        function openHRConsulting() {
+            $('#pageBody').load("HRConsulting.html")
+        }
+        function openTraining() {
+            $('#pageBody').load("Training.html")
         }
 
         $('#sidebarCollapse').click(function() {
