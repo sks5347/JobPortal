@@ -30,6 +30,7 @@ a:focus {
 }
 
 .navbar {
+    width: 103%;
     padding: 15px 10px;
     background: #006097;
     border: none;
