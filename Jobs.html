@@ -76,10 +76,11 @@
     .modal-body .form-horizontal .col-sm-offset-2 {
         margin-left: 15px;
     }
+
     .bg-image {
         /* Full height */
-        height:100%;
-        width:100%;
+        height: 100%;
+        width: 100%;
         /* Add the blur effect */
         filter: blur(8px);
         -webkit-filter: blur(8px);
@@ -104,7 +105,21 @@
         padding: 2%;
         text-align: center;
     }
-   </style>
+
+    @media(max-width:500px) {
+        #ddlForm {
+            height: 100%;
+        }
+
+        .bg-text {
+            top: 92%;
+        }
+
+        #quote {
+            margin-top: 135px !important;
+        }
+    }
+</style>
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -120,65 +135,52 @@
         <img class="bg-image" src="./images/career-1.jpg" alt="Generic placeholder image">
 
         <div class="bg-text">
-            <h2 style="font-size:3vw;">Your Career Starts Now</h2>
+            <h2 style="font-size:2vw;">Your Career Starts Now</h2>
             <p style="font-size:1vw;">"If you want to be successful in this world, you have to follow your passion, not a paycheck"</p>
-
-            <div class="container-fluid" style="padding-left: 20% !important;">
-                <form class="form-inline">
-                    <div class="form-group mr-2">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:150px;">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Select </a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+            <div class="row">
+                <div class="col-md-12" style="margin-left:5%">
+                    <form id="ddlForm" class="form-inline">
+                        <div class="col-md-3">
+                            <label>Occupation :</label>
+                            <select id="selectOccupation" class="browser-default custom-select" style="width:100%">
+                                <option selected>Open this select menu</option>
+                                <option value="1">OneOneOneOneOneOneOneOneOneOne OneOneOneOne</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="form-group mr-2">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:150px;">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Select </a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                        <div class="col-md-3">
+                            <label>Location :</label>
+                            <select id="selectLocation" class="browser-default custom-select" style="width:100%">
+                                <option selected>Open this select menu</option>
+                                <option value="1">OneOneOneOneOneOneOneOneOneOneOneOne </option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-                    </div>
-
-                    <div class="form-group mr-2">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:150px;">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Select </a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                        <div class="col-md-3">
+                            <label>Location :</label>
+                            <select id="selectLocation" class="browser-default custom-select" style="width:100%">
+                                <option selected>Open this select menu</option>
+                                <option value="1">OneOneOneOneOneOneOneOneOneOneOneOne </option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="form-group mr-2">
-                        <button type="submit" class="btn btn-primary" style="width:150px;">
-                            <i class="fa fa-search" aria-hidden="true"> Search</i>
-                        </button>
-                    </div>
-                </form>
+                        <div class="col-md-3" style="margin-top:1.6%;margin-left:-7%">
+                            <button class="btn btn-primary btn-lg"><i class="fas fa-search"></i>Search</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </div>
 
     </div>
-    <div class="container-fluid" style="padding-left: 30% !important;margin-top:50px">
+    <div id="quote" class="" style="padding-left: 30% !important;margin-top:20px;">
         <div class="row">
             <p class="font-weight-bold">
-                <h2 class="fon" >We Can Help You</h2><h1 style="color:#006097">Get A Job</h1>
+                <h2>We Can Help You</h2><h1 style="color:#006097;">Get A Job</h1>
             </p>
         </div>
         <h6 style="padding-left:80px;">Search Millions of Jobs for free</h6>
