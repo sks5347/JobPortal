@@ -30,7 +30,7 @@ a:focus {
 }
 
 .navbar {
-    width: 103%;
+    width: 100%;
     padding: 15px 10px;
     background: #006097;
     border: none;
@@ -55,6 +55,7 @@ a:focus {
 i,
 span {
     display: inline-block;
+
 }
 
 
@@ -92,6 +93,7 @@ span {
 
 #sidebar ul li a {
     text-align: left;
+    padding-left:1em;
 }
 
 #sidebar.active ul li a {
