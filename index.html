@@ -41,7 +41,7 @@
 
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" style="position:fixed;top:0;bottom:0;overflow-y:scroll;">
             <div class="sidebar-header">
                 <h3><img style="height:108px!important" class="card-img-top" src="./images/bigLogo.jpg" alt="Shallwe & Bizz" /></h3>
                 <strong><img style="height:67px!important" class="card-img-top" src="./images/small2lineLogo.jpg" alt="Shallwe & Biz" /></strong>
@@ -165,7 +165,7 @@
         <div id="content">
             <nav class="navbar navbar-lg" style="min-height:70px!important">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-light !important" onclick="showHideLogo()">
+                    <button type="button" id="sidebarCollapse" class="btn btn-light !important">
                         <i class="fas fa-bars"></i>
                     </button>
                             
@@ -228,12 +228,6 @@
                                 &copy; Copyright
                                 <script type="text/javascript">document.write(new Date().getFullYear());</script>, Shallwe & Biz.
                             </li>
-                              <!-- social link are there for future use-->
-                            <!--<li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square" ></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>-->
                         </ul>
                         
                         </div>
@@ -257,6 +251,7 @@
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('moveleft');
             });
             $('#pageBody').load("HomePage.html");
         });
@@ -315,9 +310,6 @@
         function openIT() {
             $('#pageBody').load("IT.html")
         }
-        $('#sidebarCollapse').click(function() {
-        $("i", this).toggleClass("fa fa-arrow-left fa fa-arrow-right");
-});
 
     </script>
 </body>
