@@ -1,3 +1,197 @@
-﻿<div class="container" style="margin-left: 100px;">
-    <h2>Career page</h2>
+﻿
+<style type="text/css">
+    div.dataTables_wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+</style>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#example').DataTable({
+            "scrollY": 200,
+            "scrollX": true
+        });
+    });
+</script>
+
+
+<div class="container-fluid">
+    <div class="row" style="margin-bottom:10px;">
+        <div class="col-md-12">
+            <nav class="navbar" style="display:block;text-align:center;margin-bottom:10px;color: white; !important">
+
+                <a class="navbar-brand">
+                    <img src="" width="8" height="30" class="d-inline-block align-top" alt="">
+                    Careers
+                </a>
+            </nav>
+            <div class="card mb-3">
+                <img class="card-img-top" src="./images/arch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><u>Mission</u></h5>
+                    <p class="card-text">
+                        The mission of all companies is to make the best use of resources and contribute to society and employees.
+                        A human resource that is said to be all about business among all main resources people, goods and money.
+                        The most effective use of this is the existence of Human Resources division.
+                        There are a few people who are aware of the importance of being the most important part of a company while being strong under the edge of HR.
+                        However, most corporate issues can be solved from HR. Shallwe & Biz strives to make every effort to improve all HR matters through HR.
+                    </p>
+
+                    <h5 class="card-title"><u>Philosophy</u></h5>
+                    <p class="card-text">
+                        Cherish People, Groom People, and Change the world through
+                    </p>
+                    <h5 class="card-title"><u>Credo</u></h5>
+                    <p class="card-text">
+                        1. We are always fair, and we continue to be the creator of fairness.<br />
+                        2. We always consider our employees first, and trust and respect their autonomy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <div class="btn btn-lg" style="cursor:default; background-color:#3b3838; color:white">
+                                WHY SHALLWE ?
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="text-center"><h4 class="card-title">Only a bright possibility</h4></div>
+
+                                    <div class="row" style="margin-top:52px;">
+                                        <div class="col-md-6">
+                                            <img style="height:100%;width:100%;" src="./images/upStair2.jpg" />
+                                        </div>
+                                        <div class="col-md-6" style="padding-left:50px">
+                                            <p class="card-text">We are young.</p>
+                                            <p class="card-text">Feeling anxious ? </p>
+                                            <p class="card-text">
+                                                No there is only a<br />
+                                                bright future and<br />
+                                                possibility.
+                                            </p>
+                                            <p>
+                                                You'll be next leader.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Be Professional</h4>
+                                    <img style="height:100%;width:100%;" src="./images/beProfessional5.jpg" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px;" >
+        <div class="col-md-12 text-center">
+
+            <div class="card text-center">
+                <div class="card-header">
+                    <div class="btn btn-lg" style="cursor:default; background-color:#3b3838; color:white">
+                        CURRENT OPENINGS
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive" style="margin-top:10px;">
+                        <table id="example" class="display nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                    <th>Extn.</th>
+                                    <th>E-mail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger</td>
+                                    <td>Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                    <td>5421</td>
+                                    <td>t.nixon@datatables.net</td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett</td>
+                                    <td>Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td>2011/07/25</td>
+                                    <td>$170,750</td>
+                                    <td>8422</td>
+                                    <td>g.winters@datatables.net</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton</td>
+                                    <td>Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12</td>
+                                    <td>$86,000</td>
+                                    <td>1562</td>
+                                    <td>a.cox@datatables.net</td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric</td>
+                                    <td>Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2012/03/29</td>
+                                    <td>$433,060</td>
+                                    <td>6224</td>
+                                    <td>c.kelly@datatables.net</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
+
+
+
+
+
+
