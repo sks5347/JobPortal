@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/brands.min.css">
     <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/solid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
     <script src="./fontawesome-free-5.9.0-web/js/fontawesome.min.js"></script>
     <script src="./fontawesome-free-5.9.0-web/js/all.min.js"></script>
@@ -44,7 +45,7 @@
         <nav id="sidebar" style="position:fixed;top:0;bottom:0;overflow-y:scroll;">
             <div class="sidebar-header">
                 <h3><img style="height:108px!important" class="card-img-top" src="./images/bigLogo.jpg" alt="Shallwe & Bizz" /></h3>
-                <strong><img style="height:67px!important" class="card-img-top" src="./images/small2lineLogo.jpg" alt="Shallwe & Biz" /></strong>
+                <strong><img style="height:67px!important" class="card-img-top" src="./images/blackImg.jpg" alt="Shallwe & Biz" /></strong>
             </div>
 
             <ul class="list-unstyled components" style="background-color:#3b3838 !Important;">
@@ -168,18 +169,21 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-light !important">
                         <i class="fas fa-bars"></i>
                     </button>
-                            
-                        <div class="pull-right">
-                            <button id="btnLogin" class=" btn btn-light " onclick="openLogin()">
-                                <i class="fas fa-sign-in-alt"></i>
-                                Log In
-                            </button>
-                            <button id="btnRegister" class="btn btn-light" onclick="openRegister()">
-                                <i class="fas fa-user"></i>
-                                Register
-                            </button>
-                        </div>
+                    <div id="imageLogo">
+                        <!--<img style="width:77%;" src="./images/toggleLogo.jpg" />-->
+                        <h2 id="textLogo" style="font-family: 'Libre Baskerville', serif; color:white;">Shallwe & biz</h2>
                     </div>
+                    <div class="pull-right">
+                        <button id="btnLogin" class=" btn btn-light " onclick="openLogin()">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Log In
+                        </button>
+                        <button id="btnRegister" class="btn btn-light" onclick="openRegister()">
+                            <i class="fas fa-user"></i>
+                            Register
+                        </button>
+                    </div>
+                </div>
             </nav>
 
             <div id="pageBody" style="min-height:800px; padding-bottom:100px;">
@@ -252,6 +256,7 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $('#content').toggleClass('moveleft');
+                $('#imageLogo').toggleClass('hideShow');
             });
             $('#pageBody').load("HomePage.html");
         });
