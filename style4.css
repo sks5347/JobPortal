@@ -88,9 +88,6 @@ span {
 }
 #imageLogo {
     display: none;
-    position:absolute;
-    margin-left:5%;
-    margin-top:5px;
 }
 #imageLogo.hideShow {
     display:block;
@@ -233,9 +230,6 @@ a.article:hover {
 @media (max-width: 500px) {
     #sidebarCollapse {
         font-size: 3vw;
-    }
-    #imageLogo {
-        visibility: hidden;
     }
     #btnLogin {
         font-size: 3vw;
