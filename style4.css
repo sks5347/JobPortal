@@ -140,7 +140,7 @@ span {
 }
 
 #sidebar .sidebar-header {
-    background: #6d7fcc;
+    background:#3b3838;
 }
 
 #sidebar .sidebar-header strong {
@@ -228,6 +228,9 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 500px) {
+    #imageLogo {
+        display:block!important;
+    }
     #sidebarCollapse {
         font-size: 3vw;
     }
