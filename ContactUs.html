@@ -1,64 +1,78 @@
-﻿<div class="container">
-    <div class="image-aboutus-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="lg-text">Contact Us</h1>
-                    <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+﻿<style>
+    @media(max-width: 768px) {
+        #mobileSliding {
+            width: 550px;
+        }
+    }
+</style>
+
+<div id="mobileSliding">
+
+
+
+    <div class="container">
+        <div class="image-aboutus-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="lg-text">Contact Us</h1>
+                        <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contact-section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <i class="fa fa-home"></i> <b>WebDesign Inc.</b><br>
-                    2500 CityWest Blvd.<br>
-                    Suite 300 Houston, 77042 USA<br><br>
-                    <i class="fa fa-phone"></i> <b>1800-xxx-990</b><br>
-                    <i class="fa fa-fax"></i> <b>1800-xxx-996</b><br>
-                    <i class="fa fa-envelope"></i> <a href="mailto:example@info.com">info@bigpixi.com</a><br><br>
-                    <i class="fa fa-home"></i> <b>Mon - Fri 9.00 - 18.00</b><br>
-                    Saturday - Sunday CLOSED
-                </div>
-                <div class="col-md-9 col-sm-8">
-                    <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="mail/contact.php">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input id="fname" name="First Name" class="form-control input-lg" placeholder="First name*" type="text">
+        <div class="contact-section ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <i class="fa fa-home"></i> <b>WebDesign Inc.</b><br>
+                        2500 CityWest Blvd.<br>
+                        Suite 300 Houston, 77042 USA<br><br>
+                        <i class="fa fa-phone"></i> <b>1800-xxx-990</b><br>
+                        <i class="fa fa-fax"></i> <b>1800-xxx-996</b><br>
+                        <i class="fa fa-envelope"></i> <a href="mailto:example@info.com">info@bigpixi.com</a><br><br>
+                        <i class="fa fa-home"></i> <b>Mon - Fri 9.00 - 18.00</b><br>
+                        Saturday - Sunday CLOSED
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="mail/contact.php">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <input id="fname" name="First Name" class="form-control input-lg" placeholder="First name*" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="lname" name="Last Name" class="form-control input-lg" placeholder="Last name" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="email" name="email" class="form-control input-lg" placeholder="Email*" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="phone" name="phone" class="form-control input-lg" placeholder="Phone" type="text">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input id="lname" name="Last Name" class="form-control input-lg" placeholder="Last name" type="email">
-                                </div>
-                                <div class="form-group">
-                                    <input id="email" name="email" class="form-control input-lg" placeholder="Email*" type="email">
-                                </div>
-                                <div class="form-group">
-                                    <input id="phone" name="phone" class="form-control input-lg" placeholder="Phone" type="text">
+                                <div class="col-md-7">
+                                    <div class="form-group">
+                                        <textarea cols="6" rows="8" id="comments" name="comments" class="form-control input-lg" placeholder="Message"></textarea>
+                                    </div>
+                                    <input id="submit" name="submit" class="btn btn-lg  site-btn pull-right" style="background-color:#3b3838;color:white" value="Submit now!" type="submit">
                                 </div>
                             </div>
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <textarea cols="6" rows="8" id="comments" name="comments" class="form-control input-lg" placeholder="Message"></textarea>
-                                </div>
-                                <input id="submit" name="submit" class="btn btn-lg  site-btn pull-right" style="background-color:#3b3838;color:white" value="Submit now!" type="submit">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="clearfix"></div>
-                    <div id="message"></div>
+                        </form>
+                        <div class="clearfix"></div>
+                        <div id="message"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top:30px">
+                <div class="row" style="margin-top:30px">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.811134351744!2d77.61739635191951!3d13.047690695633303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1765bbbfd99d%3A0x9328ddf6d6e42869!2sLowe&#39;s+Services+India+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1562360108967!5m2!1sen!2sin"
                             width="100%"
                             height="450"
                             frameborder="0"
                             style="border:0"
                             allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
