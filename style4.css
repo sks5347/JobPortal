@@ -228,6 +228,9 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 500px) {
+    #imageLogo {
+        display:block!important;
+    }
     #sidebarCollapse {
         font-size: 3vw;
     }
