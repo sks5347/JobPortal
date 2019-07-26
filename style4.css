@@ -82,7 +82,7 @@ span {
     color: #fff;
     transition: all 0.3s;
 }
-
+/*------------------------------my region start to add custom styling to element------------------------------*/
 #content.moveleft{
     margin-left:105px;
 }
@@ -92,7 +92,36 @@ span {
 #imageLogo.hideShow {
     display:block;
 }
+#centerLogo {
+    width: 180px;
+}
+.div1 {
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    text-align: right;
+    position: relative;
+    max-width: 62%;
+    padding-right: 10px;
+}
 
+.div2 {
+    display: inline-block;
+
+}
+.colBarLangWidth {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+}
+.btnBars{
+    margin-top:2px;
+}
+#navContentRow{
+    width:100%;
+}
+
+/*------------------------------my region end start to add custom stytling to element------------------------------*/
 #sidebar.active {
     min-width: 105px;
     max-width: 105px;
@@ -228,9 +257,50 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 500px) {
-    #imageLogo {
-        display:block!important;
+    /*------------------------------my region start to add custom media queries to element------------------------------*/
+    #navContentRow{
+        width:1200px;
     }
+    .colLogRegbtn {
+        margin-top:2px;
+    }
+    .colBarLangWidth {
+        display: inline-block;
+        width: 20%;
+        margin-top: 7%;
+    }
+    .cont {
+        display: table;
+        margin-left:135px;
+        margin-top:2px;
+    }
+    .div1 {
+        display: table-footer-group;
+        text-align:left;
+    }
+
+    .div2 {
+        display: table-header-group;
+    }
+    #imageLogo {
+        display:inline-block;
+        width: 100%;
+        margin-top:5px;
+    }
+    .topNavCol1 {
+        max-width: 25%;
+        margin-top:15px;
+    }
+    .topNavCol2 {
+        max-width: 25%;
+    }
+    topNavCol1 {
+        max-width: 50%
+    }
+    #centerLogo{
+        width:240px;
+    }
+    /*------------------------------my region end to add custom media queries to element------------------------------*/
     #sidebarCollapse {
         font-size: 3vw;
     }

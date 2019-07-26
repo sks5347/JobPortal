@@ -95,7 +95,7 @@
                             <a style="text-align:left!important;" href="#"><i class="fas fa-angle-right fa-xs"></i> CSR <small style="padding-left:10px"> (comming Soon...)</small></a>
                         </li>
                         <li>
-                            <a style="text-align:left!important;"href="#"><i class="fas fa-angle-right fa-xs"></i> IT <small style="padding-left:15px"> (comming&nbsp;&nbsp; Soon...)</small></a>
+                            <a style="text-align:left!important;" href="#"><i class="fas fa-angle-right fa-xs"></i> IT <small style="padding-left:15px"> (comming&nbsp;&nbsp; Soon...)</small></a>
                         </li>
 
                     </ul>
@@ -148,17 +148,17 @@
 
             </ul>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" >
-                    <ul class="list-unstyled list-inline social" style="pointer-events: none;">
-                        <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                        <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-                    </ul>           
-                </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social" style="pointer-events: none;">
+                    <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li class="list-inline-item"><a style="padding-left:0em !important;" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </div>
 
 
-            
+
 
 
         </nav>
@@ -167,25 +167,41 @@
         <div id="content">
             <nav class="navbar navbar-lg" style="min-height:70px!important">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-light !important">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div id="imageLogo">
-                        <img style="width:80%;" src="./images/sideLogo2.jpg" />
-                        <!--<h2 id="textLogo" style="font-family: 'Libre Baskerville', serif; color:white;">Shallwe & biz</h2>-->
-                    </div>
-                    <h6 style="color:white;position:absolute;margin-left:65%;">Welcome Sushant</h6>
-                    <h6 style="color:white;position:absolute;margin-left:5%;">English</h6>
-                    <div class="pull-right">
+                    <div class="row" id="navContentRow" style="background-color:#3b3838;">
+                        <div class="col-4 topNavCol1" style="color:white;">
 
-                        <button id="btnLogin" class=" btn btn-light " onclick="openLogin()">
-                            <i class="fas fa-sign-in-alt"></i>
-                            Log In
-                        </button>
-                        <button id="btnRegister" class="btn btn-light" onclick="openRegister()">
-                            <i class="fas fa-user"></i>
-                            Register
-                        </button>
+                                    <button type="button" id="sidebarCollapse" class="btn btn-light !important">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                        <i style="margin:0 4px 0 12px" class="fas fa-globe-americas fa-lg "></i>
+                                        <label>Japanese</label>
+
+                        </div>
+                        <div class="col-2 topNavCol2">
+                            <div id="imageLogo">
+                                <img id="centerLogo" src="./images/sideLogo2.jpg" />
+                            </div>
+
+                        </div>
+                        <div class="col-6 colLogRegbtn topNavCol3">
+                            <div class="cont">
+                                <div class="div1 col-md-6">
+                                    <label>Welcome, Sushant singh </label>
+                                </div>
+                                <div class="div2">
+                                    <button id="btnLogin" class=" btn btn-light " onclick="openLogin()">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                        Log In
+                                    </button>
+                                    <button style="margin-left:6.7px;" id="btnRegister" class="btn btn-light" onclick="openRegister()">
+                                        <i class="fas fa-user"></i>
+                                        Register
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -226,19 +242,19 @@
                         </div>
 
                     </div>
-                    <div class="row">                    
+                    <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                        <ul class="list-unstyled list-inline social text-center" style="color:black">
-                            <li>
-                                &copy; Copyright
-                                <script type="text/javascript">document.write(new Date().getFullYear());</script>, Shallwe & biz.
-                            </li>
-                        </ul>
-                        
+                            <ul class="list-unstyled list-inline social text-center" style="color:black">
+                                <li>
+                                    &copy; Copyright
+                                    <script type="text/javascript">document.write(new Date().getFullYear());</script>, Shallwe & biz.
+                                </li>
+                            </ul>
+
                         </div>
 
                     </div>
-                    </div>
+                </div>
             </footer>
         </div>
     </div>
@@ -272,21 +288,21 @@
             $('#pageBody').load("Jobs.html");
         }
         function RedirectLogin() {
-               window.location = "Login.html";
-            }
-    function openRegister() {
-               $('#pageBody').load("Register.html");
-            }
-       function openLogin(){
+            window.location = "Login.html";
+        }
+        function openRegister() {
+            $('#pageBody').load("Register.html");
+        }
+        function openLogin() {
             $('#pageBody').load("Login.html");
-       }
-       function openPostedJobs(){
+        }
+        function openPostedJobs() {
             $('#pageBody').load("PostedJobs.html");
-       }
-       function openAppliedJobs(){
+        }
+        function openAppliedJobs() {
             $('#pageBody').load("AppliedJobs.html");
-       }
-        function openAllNewsandTopics(){
+        }
+        function openAllNewsandTopics() {
             $('#pageBody').load("AdminNewsandTopics.html")
         }
         function openRecruitment() {
