@@ -84,7 +84,7 @@ span {
 }
 /*------------------------------my region start to add custom styling to element------------------------------*/
 #content.moveleft{
-    margin-left:105px;
+    margin-left:130px;
 }
 #imageLogo {
     display: none;
@@ -123,8 +123,8 @@ span {
 
 /*------------------------------my region end start to add custom stytling to element------------------------------*/
 #sidebar.active {
-    min-width: 105px;
-    max-width: 105px;
+    min-width: 137px;
+    max-width: 137px;
     text-align: center;
 }
 
