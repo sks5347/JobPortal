@@ -245,7 +245,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-    width: 150%;
+    width: 220%;
     /*padding: 20px;  Padding Commented*/
     min-height: 100vh;
     transition: all 0.3s;
@@ -257,8 +257,14 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 500px) {
-    /*------------------------------my region start to add custom media queries to element------------------------------*/
-    #navContentRow{
+    #sidebar.active ul li a {
+        font-size:18px;
+    }
+    body {
+        font-size: 1.3rem !important;
+    }
+        /*------------------------------my region start to add custom media queries to element------------------------------*/
+        #navContentRow{
         width:1200px;
     }
     .colLogRegbtn {
@@ -294,15 +300,13 @@ a.article:hover {
     .topNavCol2 {
         max-width: 25%;
     }
-    topNavCol1 {
-        max-width: 50%
-    }
+
     #centerLogo{
         width:240px;
     }
     /*------------------------------my region end to add custom media queries to element------------------------------*/
     #sidebarCollapse {
-        font-size: 3vw;
+        font-size: 8vw;
     }
     #btnLogin {
         font-size: 3vw;
